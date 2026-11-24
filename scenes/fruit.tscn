@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://bbudlxmtd50lu"]
+
+[ext_resource type="Texture2D" uid="uid://bpwktwgh15dg0" path="res://assets/sprites/fruit.png" id="1_lfepc"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_d4lbn"]
+size = Vector2(10, 12)
+
+[node name="Fruit" type="Area2D" unique_id=831233893]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=623293087]
+texture = ExtResource("1_lfepc")
+region_enabled = true
+region_rect = Rect2(2, 18, 11, 13)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=287372021]
+shape = SubResource("RectangleShape2D_d4lbn")
